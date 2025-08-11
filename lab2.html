@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: cd Command</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="text-3xl font-bold">Lab 2: The `cd` Command</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <h2 class="section-title">1. What is `cd`?</h2>
+            <p>
+                The `cd` (change directory) command is used to navigate the file system. It's how you move from one folder to another. Without the ability to change directories, you'd be stuck in the same place and couldn't access files in other locations.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">2. Syntax and Usage</h2>
+            <p>
+                The basic syntax is `cd [directory]`. The `[directory]` part is the path to the folder you want to move into.
+            </p>
+            <p>
+                Some important uses and special paths include:
+            </p>
+            <ul>
+                <li>`cd my_dir`: Changes into the `my_dir` directory.</li>
+                <li>`cd ..`: Moves up one directory level.</li>
+                <li>`cd`: Navigates back to your home directory (the default starting point).</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">3. Interactive Playground</h2>
+            <div class="terminal-container">
+                <div id="terminal-output">
+                    <!-- Initial welcome message -->
+                    <pre class="terminal-line">Welcome to the `cd` command playground.</pre>
+                    <pre class="terminal-line">Use `ls` to see what's here, and `cd [directory]` to navigate.</pre>
+                </div>
+                <div class="terminal-input-line">
+                    <span id="terminal-prompt" class="terminal-prompt">user@devops-lab:~$</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autofocus>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DevOps Learning Labs</p>
+    </footer>
+    <script src="terminal.js" data-lab="lab2"></script>
+</body>
+</html>

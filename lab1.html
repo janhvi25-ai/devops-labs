@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1: ls Command</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="text-3xl font-bold">Lab 1: The `ls` Command</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <h2 class="section-title">1. What is `ls`?</h2>
+            <p>
+                The `ls` (list) command is one of the most fundamental commands in Linux and other Unix-like operating systems. Its primary purpose is to list the contents of a directory. Think of it as the command-line equivalent of opening a folder on your desktop and seeing all the files and subfolders inside.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">2. Syntax and Usage</h2>
+            <p>
+                The basic syntax is simply `ls`. When you run this command, it lists the files and directories in your current location.
+            </p>
+            <p>
+                You can also use various options (also known as flags) to modify its behavior. Some common options include:
+            </p>
+            <ul>
+                <li>`ls -l`: Lists files in a "long" format, showing permissions, owner, size, and modification date.</li>
+                <li>`ls -a`: Lists all files, including hidden files (those starting with a dot `.`).</li>
+                <li>`ls -la` or `ls -al`: Combines the two options above.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">3. Interactive Playground</h2>
+            <div class="terminal-container">
+                <div id="terminal-output">
+                    <!-- Initial welcome message -->
+                    <pre class="terminal-line">Welcome to the `ls` command playground.</pre>
+                    <pre class="terminal-line">Use `ls` to see what's in your current directory.</pre>
+                </div>
+                <div class="terminal-input-line">
+                    <span id="terminal-prompt" class="terminal-prompt">user@devops-lab:~$</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autofocus>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DevOps Learning Labs</p>
+    </footer>
+
+    <script src="terminal.js" data-lab="lab1"></script>
+</body>
+</html>
